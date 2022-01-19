@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Decodificação</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <textarea name="textoaqui" id="textoaqui" cols="20" rows="8" placeholder="Digite aqui sua mensagem!"></textarea>
+            <input type="radio" name="cifraDeCesar" id="cifraDeCesar">
+            <label for="cifraDeCesar">Cifra de César</label>
+            <input type="radio" name="base64" id="base64">
+            <label for="base64">Base64</label>
+            <button onclick="codificar()">Codificar</button>
+            <button onclick="decodificar()">Decodificar</button>
+        </div>
+    </main>
+</body>
+</html>
