@@ -5,20 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <title>Decodificação</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <main>
+        <h1>Decodificador 9000 o brabo</h1>
         <div class="container">
-            <textarea name="textoaqui" id="textoaqui" cols="20" rows="8" placeholder="Digite aqui sua mensagem!"></textarea>
-            <input type="radio" name="cifraDeCesar" id="cifraDeCesar">
-            <label for="cifraDeCesar">Cifra de César</label>
-            <input type="radio" name="base64" id="base64">
-            <label for="base64">Base64</label>
-            <button onclick="codificar()">Codificar</button>
-            <button onclick="decodificar()">Decodificar</button>
+            <textarea name="textoaqui" id="textoaqui" cols="25" rows="12" placeholder="Digite aqui sua mensagem!"></textarea>
+            <div class="midsection">
+                <div class="decod">
+                    <input type="radio" name="decodNome" id="cifraDeCesar">
+                    <label for="cifraDeCesar"><span title="insira aqui descrição">Cifra de César</span></label>
+                </div>
+                <div class="decod1">
+                    <input type="radio" name="decodNome" id="base64">
+                    <label for="base64">Base64</label>
+                </div>
+                <button class="botaoC">Codificar</button>
+                <button class="botaoD">Decodificar</button>
+            </div>
+            <textarea name="resultadoaqui" id="resultadoaqui" cols="25" rows="12" placeholder="Sua mensagem codificada!"></textarea>
         </div>
     </main>
+    <footer>
+        <p><a href="https://github.com/55021">Maria Rita Santana</a> 2022</p>
+    </footer>
 </body>
 </html>

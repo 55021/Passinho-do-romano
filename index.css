@@ -7,14 +7,56 @@ main {
     height: 100vh;
     margin: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #020204;
+}
+
+.container, .midsection, textarea, textarea::placeholder, button, h1 {
+    background-color: #020204;
+    color: #22b455;
+}
+
+.container, textarea, button {
+    border: 1px solid #204829;
 }
 
 .container {
     height: 50vh;
     width: 60vw;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+}
+
+.midsection {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#textoaqui, #resultadoaqui {
+    place-self: center;
+}
+
+button {
+    width: 65%;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+p {
+    text-align: center;
+    color: #22b455;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.5em;
 }
