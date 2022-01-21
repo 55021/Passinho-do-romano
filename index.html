@@ -17,16 +17,18 @@
         <div class="container">
             <textarea name="textoaqui" id="textoaqui" cols="25" rows="12" placeholder="Digite aqui sua mensagem!"></textarea>
             <div class="midsection">
-                <div class="decod">
-                    <input type="radio" name="decodNome" id="cifraDeCesar">
-                    <label for="cifraDeCesar"><span title="insira aqui descrição">Cifra de César</span></label>
+                <select name="codes" id="codes">
+                    <option>Selecione...</option>
+                    <option value="cifraDeCesar">Cifra de César</option>
+                    <option value="base64">Base64</option>
+                </select>
+                <div class="incremento">
+                    <input type="number" name="incremento" id="incremento" placeholder="Digite aqui o incremento:">
                 </div>
-                <div class="decod1">
-                    <input type="radio" name="decodNome" id="base64">
-                    <label for="base64">Base64</label>
-                </div>
-                <button class="botaoC">Codificar</button>
-                <button class="botaoD">Decodificar</button>
+                <input type="radio" name="botao" id="botaoC">
+                <label for="botaoC">Codificar</label>
+                <input type="radio" name="botao" id="botaoD">
+                <label for="botaoD">Decodificar</label>
             </div>
             <textarea name="resultadoaqui" id="resultadoaqui" cols="25" rows="12" placeholder="Sua mensagem codificada!"></textarea>
         </div>

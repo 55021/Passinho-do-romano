@@ -36,7 +36,16 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.incremento {
+    display: none;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 #textoaqui, #resultadoaqui {
@@ -44,7 +53,7 @@ main {
 }
 
 button {
-    width: 65%;
+    width: 8rem;
     font-family: 'Share Tech Mono', monospace;
 }
 
