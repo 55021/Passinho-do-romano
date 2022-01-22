@@ -39,13 +39,21 @@ main {
     gap: 1.5rem;
 }
 
-.incremento {
+.inputincremento {
     display: none;
+    padding: 2px;
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.radios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.4rem;
 }
 
 #textoaqui, #resultadoaqui {

@@ -13,7 +13,7 @@
 </head>
 <body>
     <main>
-        <h1>Decodificador 9000 o brabo</h1>
+        <h1>Decodificador de mensagens 🤫</h1>
         <div class="container">
             <textarea name="textoaqui" id="textoaqui" cols="25" rows="12" placeholder="Digite aqui sua mensagem!"></textarea>
             <div class="midsection">
@@ -22,13 +22,18 @@
                     <option value="cifraDeCesar">Cifra de César</option>
                     <option value="base64">Base64</option>
                 </select>
-                <div class="incremento">
-                    <input type="number" name="incremento" id="incremento" placeholder="Digite aqui o incremento:">
+                <div class="inputincremento">
+                    <input type="number" name="incremento" id="incremento" min="1" max="25" placeholder="Digite aqui o incremento:">
                 </div>
-                <input type="radio" name="botao" id="botaoC">
-                <label for="botaoC">Codificar</label>
-                <input type="radio" name="botao" id="botaoD">
-                <label for="botaoD">Decodificar</label>
+                <div class="radios">
+                    <input type="radio" name="botao" id="codificar">
+                    <label for="codificar">Codificar</label>
+                </div>
+                <div class="radios">
+                    <input type="radio" name="botao" id="decodificar">
+                    <label for="decodificar">Decodificar</label>
+                </div>
+                <button class="botao001">Vamos?</button>
             </div>
             <textarea name="resultadoaqui" id="resultadoaqui" cols="25" rows="12" placeholder="Sua mensagem codificada!"></textarea>
         </div>
