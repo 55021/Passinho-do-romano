@@ -70,7 +70,6 @@ function cifraCesar2(mensagemDigitada) {
 }
 
 // Parte final: codificar ou decodificar
-// Escrever no placeholder pro input não incluir acentos. nem número
 oBotao.addEventListener('click', () => {
     if (encode.checked == true && option.value == "base64") {
         output.value = btoa(input.value);

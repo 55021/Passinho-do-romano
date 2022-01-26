@@ -77,3 +77,34 @@ p {
     font-family: 'Share Tech Mono', monospace;
     font-size: 0.5em;
 }
+
+@media (max-width: 400px), (orientation: portrait) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 60vh;
+        width: 60vw;
+        padding: 15px;
+    }
+
+    .midsection {
+        margin: 8px 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    footer {
+        padding: 6px;
+        margin: 0;
+    }
+
+    main {
+        gap: 7px;
+        box-sizing: border-box;
+    }
+}
